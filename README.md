@@ -1,2 +1,2 @@
-# WebDevelopmentBasics
-a recompilation of basic web development chunks 
+# WebDevelopmentFoundations
+a recompilation of web development chunks 
