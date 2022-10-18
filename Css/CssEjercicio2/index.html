@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejemplo CSS 2</title>
+		
+		<!--asi se integran estilos css hechos en otro documento-->
+
+		<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+
+		<!--
+		existen tres tipos de prioridades, los de mayor prioridad son
+		los estilos que se implementan directamente en los
+		elementos del documento html, pues sobre-escriben los 
+		anteriores, seguidos en segunda prioridad los 
+		estilos declarados en el head del documento html,
+		dejando como tercer y ultima prioridad, los documentos 
+		de css creados en archivos para su posterior implementacion
+		-->
+		<style>
+			<!--
+			body{
+				font-family:"Bodoni MT Black";
+				color:#ff0000;
+			}
+			-->
+		</style>
+	
+	</head>
+		<!--el tag de body hereda las propiedades del archivo estilos.css-->
+	<body>
+		<h1>CSS Ejemplo 2</h1>
+		<!--prioridad 1: estilo mas interno-->
+
+		<p style="font-family:Agency F3">
+			Este es un parrafo de ejemplo
+		</p>
+		
+	</body>
+</html>

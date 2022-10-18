@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - Evaluación</title>
+	<style>
+		body {
+			font-family: verdana;
+			background: #dddddd;
+		}
+
+		div {
+			padding: 10px;
+		}
+
+		button {
+			padding: 15px;
+			font-size: 25px;
+			background: blue;
+			color: white;
+		}
+
+		.verde {
+			color: green;
+		}
+
+		.violeta {
+			color: #C232FF;
+		}
+
+		.azul {
+			color: blue;
+		}
+
+		.rojo {
+			color: red;
+		}
+
+		.peachPuff {
+			background-color: PeachPuff;
+			border: 5px dotted white;
+		}
+
+		.papayaWhip {
+			background-color: PapayaWhip;
+			border: 5px dotted white;
+		}
+
+		.paleTurquoise {
+			background-color: PaleTurquoise;
+			border: 5px dotted white;
+		}
+
+		.lightSkyBlue {
+			background-color: LightSkyBlue;
+			border: 5px dotted white;
+		}
+
+		#frasesOrdenadas_1 {
+			border: 5px solid red;
+			width: 700px;
+		}
+
+		#frasesOrdenadas_2 {
+			border: 5px solid blue;
+			width: 500px;
+		}
+	</style>
+	<script type="text/javascript">
+		function ordenarFrases() {
+
+			let orden = []
+			const frases = document.getElementsByTagName("div");
+			for (i = 0; i < frases.length - 2; i++) {
+				let frase = frases[i].lastElementChild.textContent;
+				orden.push(frase);
+			}
+			orden.sort();
+			console.log(orden);
+			for (i = 0; i < orden.length; i++) {
+				for (j = 0; j < orden.length; j++) {
+					if (frases[j].lastElementChild.textContent == orden[i]) {
+
+						if (frases[j].lastElementChild.textContent > 0 && frases[j].lastElementChild.textContent < 31) {
+							document.getElementById('frasesOrdenadas_2').insertAdjacentHTML('beforebegin', '<div class=' + frases[j].getAttribute("class") + '> <strong>' + orden[i] + '</strong>' + frases[j].lastChild.textContent + '</div>');
+						}
+						if (frases[j].lastElementChild.textContent == 31 || frases[j].lastElementChild.textContent == 32) {
+							document.getElementById('frasesOrdenadas_2').insertAdjacentHTML('beforeend', '<div class=' + frases[j].getAttribute("class") + '> <strong>' + orden[i] + '</strong>' + frases[j].lastChild.textContent + '</div>');
+						}
+						if (frases[j].lastElementChild.textContent > 32) {
+							document.getElementById('frasesOrdenadas_1').insertAdjacentHTML('beforeend', '<div class=' + frases[j].getAttribute("class") + '> <strong>' + orden[i] + '</strong>' + frases[j].lastChild.textContent + '</div>');
+						}
+					}
+				}
+			}
+
+		}
+
+	</script>
+</head>
+
+<body>
+	<h2 class="rojo"> Alejandro Cabarcas Perdomo </h2>
+	<h2> Javascript DOM - 20191176712 </h2>
+	<h3>Mover los elementos para colocarlos en orden dentro de los recuadros <b class="rojo">ROJO</b> y <b
+			class="azul">AZUL</b>: 27-28-29-30-31-32-33-34 (incluir el estilo)</h3>
+	<h3 class="verde">La solución debe servir para cualquier texto colocado en los DIV ( no solo el de este ejemplo ).
+	</h3>
+	<h3 class="violeta">No se permite utilizar document.write().</h3>
+	<h3 class="rojo">En el < BODY> solo cambie NOMBRES Y APELLIDOS, el resto del ˂ BODY ˃ no se modifica. <br />Solo
+			hacer cambios de CSS y JS en el ˂HEAD˃</h3>
+
+	<div class="peachPuff">
+		<strong>33</strong> Inteligencia militar son dos términos contradictorios.
+	</div>
+	<div class="peachPuff">
+		<strong>34</strong> Jamás olvido una cara, pero en su caso, estaré encantado de hacer una excepción.
+	</div>
+
+	<div class="papayaWhip">
+		<strong>31</strong> Hijo mío, la felicidad está hecha de pequeñas cosas: un pequeño yate, una pequeña mansión,
+		una pequeña fortuna.
+	</div>
+	<div class="papayaWhip">
+		<strong>32 </strong> Humor es posiblemente una palabra; la uso constantemente. Estoy loco por ella y algún día
+		averiguaré su significado.
+	</div>
+
+	<div class="paleTurquoise">
+		<strong>29</strong> He tenido una noche absolutamente maravillosa. Pero no ha sido ésta.
+	</div>
+	<div class="paleTurquoise">
+		<strong>30</strong> He disfrutado mucho con esta obra de teatro, especialmente en el descanso..
+	</div>
+
+	<div class="lightSkyBlue">
+		<strong>27</strong> Fuera del perro, un libro es probablemente el mejor amigo del hombre, y dentro del perro
+		probablemente está demasiado oscuro para leer.
+	</div>
+	<div class="lightSkyBlue">
+		<strong>28</strong> Hace tiempo conviví casi dos años con una mujer hasta descubrir que sus gustos eran
+		exactamente como los míos: los dos estábamos locos por las chicas.
+	</div>
+
+	<hr />
+	<hr />
+	<button onclick="ordenarFrases()">Ordenar frases</button>
+
+	<br /><br />
+	<div id="frasesOrdenadas_1">
+		<div id="frasesOrdenadas_2">
+
+		</div>
+	</div>
+</body>
+
+</html>

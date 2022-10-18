@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <title>Componentes HTML</title>
+
+        <meta charset="UTF-8">
+
+    </head>
+
+    <body>
+
+	<h1>Algunos Componentes HTML</h1>
+	<p>	
+	Liga a componentes de texto
+	</p>
+	<a href="ComponentesTexto.html">Liga a Componentes de texto</a>
+	<!--Titulo de mayor tamaño-->
+	<h1>Algunos componentes HTML</h1>
+
+        <p>
+		Nuevo Parrafo
+	</p>
+
+	<!--Creacion de tabla-->
+	<table width="200" border="1" bgcolor="color">
+	<!--Fila principal donde van los titulos-->
+	<tr>
+		<!--Columnas-->
+		<th>
+			Titulo1
+		</th>
+		<th>
+			Titulo2
+		</th>
+	</tr>
+		<!--Filas de contenido-->
+	<tr>
+		<td>
+			Dato1
+		</td>
+		<td>
+			Dato2
+		</td>
+	</tr>	
+	</table>
+
+	<p>
+	
+	</p>
+
+	<!--Creacion de vinculos, enlaces-->
+	<a href="Aqui va la direccion del enlace">Aqui se muestra el texto que estara enlazado con el enlaze</a>
+	</br>
+
+	Lista:
+	
+	<!--Creando una lista-->	
+	<select name="Lista1">
+		
+		<!--Agregando contenido a la lista-->
+		<!--Estos elementos deben estar dentro de un fomulario HTML-->
+		<option>Valor1</option>
+		<option>Valor2</option>
+		<option>Valor3</option>
+	</select>
+	
+	<p>
+	</p>
+
+	Incluyendo una imagen:	
+
+	<!--Inclusion de imagen-->	
+	<img src="images/eduardo.jpg" alt="Imagen de mi hermano"/>
+
+	<p>
+	</p>
+
+	<!--Para agregar un formulario-->
+	<form name="nombreDelFormularioAqui" action="/aquiSeDireccionaAdondeSeEnviaraElFormulario">
+		
+		<!--Permite organizar los elementos de un formulario de una mejor manera-->
+		<fieldset>	
+			<legend>
+				Persona:
+			</legend>
+			Name: <input type = "text" size="30" name="nombre"/>
+			<!--Salto de línea-->
+			<br/>
+			email: <input type = "text" size="30" name="email"/>
+			<br/>
+			<!--Al hacer click en submit se enviaran lo reolectado por el formulario al lugar especificado en elemento action de la etiqueta form-->
+			<button type="submit">
+			Enviar Datos
+			</button>
+		</fieldset>
+	</form>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+body{
+	background:#fb29da;
+	font-family:"Arial Narrow";
+	color:white;
+}
+
+h1{
+	font-size:xx-large;
+	font-style:italic;
+}
+
+p{
+	font-weight:bolder;
+	background:#469b78;
+}
+
+/*
+Agregamos una nueva clase aplicable a cualquier elemento html
+*/
+
+.resaltado{
+	background:#9E354A;
+	font-weight:bold;
+}
+
+.nuevaClaseCss{
+	font-family:"Century Gothic";
+	background:#4F0010;
+	font-weight:bold;
+}

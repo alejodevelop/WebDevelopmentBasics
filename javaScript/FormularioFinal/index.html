@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario Final</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<script type="text/javascript" src="validaciones.js"></script>
+	</head>
+	<body>
+	
+		<!--this almacena el elemento que en ese momento esta activo-->
+		<form name="form1" action="/recursoEnServidor"
+		method="post" onsubmit="return validarForma(this);">
+			<!--hay dos metodos, post y get, su diferencia radica en que 
+			mientras con get,que es el que se aplica por default,
+			se concatenan todos los parametros enviados, incluye 
+			claves, y pueden ser visibles en la url, post, permite no
+			dar visibilidad a estos-->
+		
+			<!--onsubmit se encarga de enviar o no el formulario
+			al sitio especificado en el atributo action,
+			por ende, se le retornara un true o un false del 
+			metodo llamado para definir si se enviara o no-->
+		
+			<input type="hidden" name="oculto" value="valorOculto">
+		
+			<table width="200" id="one-column-emphasis">
+				<caption>
+					Formulario Registro de Datos
+				</caption>
+				<tr>
+					<td class="oce-first">
+						Usuario: (*)
+					</td>
+					<td>
+						<input class="deafult" type="text"
+							name="usuario" value="Escribir usuario"
+							onfocus="this.select()"/>
+							<!--onfocus se usa para seleccionar este campo
+							de manera automatica una vez se cargue la pagina-->						
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">
+						Password: (*)
+					</td>
+					<td>
+						<input class="default" type="password"
+							name="password" onfocus="this.select();">
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">
+						Tecnolog&iacute;a de Inter&eacute;s: (*)
+					</td>
+					<td>
+						Java <input type="checkbox" name="tecnologia" value="java">
+						&nbsp;&nbsp;&nbsp;
+						
+						.Net <input type="checkbox" name="tecnologia" value="net">
+						&nbsp;&nbsp;&nbsp;
+						
+						Php <input type="checkbox" name="tecnologia" value="php">
+						&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">
+					G&eacute;nero: (*)
+					</td>
+					<td>
+					Hombre<input type="radio" name="genero" value="H">
+					&nbsp; &nbsp; &nbsp;<!--genera espacios entre los elementos de manera horizontal-->
+					Mujer<input type="radio" name="genero" value="M">
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">
+					Ocupaci&oacute;n: (*)
+					</td>
+					<td>
+						<select name="ocupacion" class="default">
+							<option value=""> Seleccionar</option>
+							<option value="1">Profesor</option>
+							<option value="2">Ingeniero</option>
+							<option value="3">Jubilado</option>
+							<option value="4">Otro</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">
+						M&uacute;sica Favorita:
+					</td>
+					<td>
+						<select name="musica" multiple class="default">
+							<option value="rock">Rock</option>
+							<option value="pop">Pop</option>
+							<option value="salsa">Salsa</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">
+						Comentarios:
+					</td>
+					<td>
+						<textarea name="comentarios" cols="30" rows="2"
+						class="default" onfocus="this.select();">
+						Escribir un texto</textarea>
+					</td>
+				</tr>
+				<tr style="text-align:center;">
+					<td>
+						<input type="reset" value="Limpiar" class="default">
+					</td>
+					<td>
+						<input type="submit" value="Enviar" class="default">
+					</td>
+				</tr>
+			</table>
+		</form>	
+	</body>
+</html>
