@@ -1,0 +1,29 @@
+hr {
+  /*we got here, two ways for do the same, exist more than two
+  for more information about dotted, take look to documentation css page
+  border-style: dotted none none;*/
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  border-color: grey;
+  height: 0px;
+  width: 5%;
+}
+
+h1, h3 {
+  color: #66BFBF;
+}
+
+.images {
+  background-color: #defcf9;
+}
+
+#me {
+  border-radius: 0%;
+}
+
+/*the priority of css styles is, first, styles declare into the html tags inside
+of our html document, second priority is the styles declare inside our head in the
+html document, and finally, the last priority are the styles declare in global way
+by a css file, implement just the atributes that doesn't override other in the
+previous hierarchy*/

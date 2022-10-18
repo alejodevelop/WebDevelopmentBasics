@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>contac me</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <ul type="square">
+    <li>phone number: 322 711 0643</li>
+    <li>email: alejocabarcas04@gmail.com</li>
+  </ul>
+  <!--the action specific what is the step to forward once the user press the button-->
+  <!--mailto send the information capture by the form to a email previous specified-->
+  <!--enctype refers to the contain of that query sent by the form-->
+  <form action="mailto:alejocabarcas04@gmail.com" method="post" enctype="text/plain">
+    <label>your name:</label>
+    <input type="text" name="yourName">
+    <input type="color" name="">
+    <hr>
+    <label>Usuario:</label>
+    <input type="email" name="yourEmail" value=""><br><br>
+    <label>password:</label>
+    <input type="password"><br><br>
+    <!--atributte for, is use to direct a label to other element by its id-->
+    <label for="aceptar">do you want to sing up to the email list?</label>
+    <input type="checkbox" name="" id="aceptar">
+    <input type="submit"><br>
+    <!--there are a lot of inputs that i can use like a calendar, radio button
+      among others according what i need to do into my form-->
+    <textarea name="yourMessage" rows="10" cols="30"></textarea>
+  </form>
+</body>
+
+</html>
