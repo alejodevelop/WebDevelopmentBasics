@@ -1,0 +1,44 @@
+/************************TAG SELECTORS***************************/
+h1 {
+  /*default*/
+  color: red;
+  font-size: 200px;
+}
+
+img {
+  /*default*/
+  background-color: blue;
+  height: 10%;
+  width: 10%;
+}
+
+/************************CLASS SELECTORS***************************/
+.bacon {
+  /*overriding specific css atribute*/
+  background-color: green;
+}
+
+.broccoli {
+  /*overriding specific css atribute*/
+  background-color: red;
+}
+
+.circular {
+  border-radius: 100%;
+}
+
+/************************ ID SELECTORS***************************/
+#heading {
+  /*overriding specific css atribute*/
+  color: blue;
+}
+
+/*there are automatic propierties applied by the browser */
+/************************PSEUDO CLASSES***************************/
+img:hover {
+  background-color: gold;
+}
+/*the elements have different states, you can midificate this states
+using pseudo-classes, that refer diferent states of the elements,
+as this example, where i used :hover to define the state when the user
+put over the cursor on the element*/

@@ -1,0 +1,15 @@
+{
+  "name": "calculator-server",
+  "version": "1.0.0",
+  "description": "calculator on a server enviroment",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alejo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
