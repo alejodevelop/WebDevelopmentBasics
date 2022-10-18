@@ -1,0 +1,49 @@
+/*hace referencia al contenedor donde se muestra el resultado*/
+.pantallaResultados {
+  margin: 10% 20%;
+  display: inline;
+  position: relative;
+  top: 7rem;
+  font-size: 300%;
+}
+
+.contenedorCalculadora {
+  background: lightgrey;
+  width: 30%;
+  height: 25%;
+  margin: 5% 25%;
+  padding: 1%;
+  position: relative;
+  left: 30%;
+  bottom: 2rem;
+  border-style: outset;
+}
+
+.pantalla {
+  width: 70%;
+  margin: 0 0 1% 0;
+}
+
+.btn {
+  width: 20%;
+  height: 18%;
+}
+
+@media (max-width:900px) {
+  .btn {
+    width: 22%;
+    height: 18%;
+  }
+
+  .contenedorCalculadora {
+    width: 70%;
+    margin-top: 25%;
+    left: 4%;
+  }
+
+  .pantallaResultados {
+    position: absolute;
+    top: 15%;
+    left: auto;
+  }
+}

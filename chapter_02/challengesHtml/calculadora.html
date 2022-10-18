@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>calculadora</title>
+  <link rel="stylesheet" href="css/calculadoraStyles.css">
+</head>
+
+<body>
+
+  <div id="cajaResultados" class="pantallaResultados">
+  </div>
+
+  <script type="text/javascript" src="behavior/functionsCalculadora.js"></script>
+
+  <div class="contenedorCalculadora">
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="=" name="igual">=</button>
+    <input id="vista" class="pantalla" type="text" name="pantallaOperacionActual" value="" disabled="true">
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="+" name="sumar">+</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="1" name="uno">1</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="2" name="dos">2</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="3" name="tres">3</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="-" name="restar">-</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="4" name="cuatro">4</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="5" name="cinco">5</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="6" name="seis">6</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="*" name="multiplicar">*</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="7" name="siete">7</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="8" name="ocho">8</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="9" name="nueve">9</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="/" name="dividir">/</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="0" name="cero">0</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="." name="punto">.</button>
+    <button class="btn" onclick="recolectarTecla(this)" type="button" value="clr" name="borrar">clr</button>
+
+  </div>
+
+</body>
+
+</html>

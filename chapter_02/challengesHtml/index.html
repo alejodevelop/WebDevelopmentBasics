@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/homeStyles.css">
+</head>
+
+<body>
+
+  <div class="contenedor-pagina">
+
+    <!--seccion de titulo-->
+    <div class="titulo-container">
+      <h1>Home</h1>
+    </div>
+
+    <div class="indice-container">
+      <!--seccion indice o barra de navegacion-->
+      <div class="boxes">
+
+        <div class="box1">
+          <a name="caja1" value="0" onclick="cambiarPagina(this)">Arquitectura</a>
+        </div>
+        <div class="box2">
+          <a value="1" onclick="cambiarPagina(this)">Calculadora</a>
+        </div>
+        <div class="box3">
+          <a value="2" onclick="cambiarPagina(this)">Lista</a>
+        </div>
+        <div class="box4">
+          <a value="3" onclick="cambiarPagina(this)">Reproductores</a>
+        </div>
+        <div class="box5">
+          <a value="4" onclick="cambiarPagina(this)">Videos</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!--seccion paginas-->
+    <div class="paginas-container">
+      <iframe id="paginas" name="containerPaginas" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="behavior/functionsHome.js"></script>
+
+</body>
+
+</html>

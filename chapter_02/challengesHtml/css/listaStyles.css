@@ -1,0 +1,39 @@
+/*estilizado de tabla*/
+table {
+  margin: auto;
+  margin-top: 5%;
+  border-collapse: separate;
+}
+
+th {
+  background-color: #0792F5;
+  Color: white;
+}
+th:hover {
+  background-color: #eee;
+  Color: #787878;
+}
+
+td {
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  border: hidden;
+}
+
+td:hover {
+  background-color: #eee;
+}
+
+/*estilizado de iconos*/
+.fa-check, .fa-times {
+  color: #787878;
+}
+
+.fa-check:hover {
+  color: green;
+}
+
+.fa-times:hover {
+  color: red;
+}

@@ -1,0 +1,99 @@
+/*cuerpo*/
+body {
+  font-family: sans-serif;
+}
+
+/*desactiva la scrollbar*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*titulo*/
+h1 {
+  text-align: left;
+  font-size: 300%;
+  margin: 5% 0 10% 0;
+  position: relative;
+  left: 5%;
+  color: #aaa;
+}
+
+h2 {
+  display: inline;
+  font-size: 170%;
+  color: #aaa;
+}
+
+hr {
+  margin-bottom: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+  border-width: thin;
+  color: #aaa;
+}
+
+p {
+  color: #000;
+  font-size: 150%;
+}
+
+/*parrafos*/
+.text1 p {
+  margin-right: 5%;
+}
+
+.text2 p {
+  margin-left: 5%;
+}
+
+.text2 h2 {
+  margin-left: 5%;
+}
+
+/*imagenes*/
+.img1 {
+  float: left;
+  margin: 0 5% 0 5%;
+  width: 30%;
+  height: 30%;
+}
+
+.img2 {
+  float: right;
+  margin: 0 5% 0 5%;
+  width: 30%;
+  height: 30%;
+}
+
+/*media querys*/
+@media (max-width:900px) {
+  .img1, .img2 {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    text-align: left;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 200%;
+    margin: 10% 0 20% 0;
+    position: relative;
+    left: 5%;
+    color: #aaa;
+  }
+
+  h2 {
+    text-align: left;
+    display: block;
+    font-size: 170%;
+    color: #aaa;
+  }
+
+  p {
+    text-align: left;
+    font-size: 110%;
+  }
+}
